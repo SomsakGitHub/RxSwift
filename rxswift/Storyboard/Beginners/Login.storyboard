@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="LoginViewController" customModule="rxswift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nFd-Ks-wTe">
+                                <rect key="frame" x="98.333333333333329" y="79" width="196.33333333333337" height="34"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VDZ-m1-llK">
+                                <rect key="frame" x="98.333333333333329" y="133" width="196.33333333333337" height="34"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Svi-Fi-J4j">
+                                <rect key="frame" x="163.66666666666666" y="187" width="66" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Login"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nFd-Ks-wTe" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="4XD-xO-C35"/>
+                            <constraint firstItem="Svi-Fi-J4j" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="6Nx-FC-S2b"/>
+                            <constraint firstItem="VDZ-m1-llK" firstAttribute="width" secondItem="vDu-zF-Fre" secondAttribute="width" multiplier="0.5" id="9Fv-w5-MY7"/>
+                            <constraint firstItem="nFd-Ks-wTe" firstAttribute="width" secondItem="vDu-zF-Fre" secondAttribute="width" multiplier="0.5" id="RqX-w4-1bn"/>
+                            <constraint firstItem="VDZ-m1-llK" firstAttribute="top" secondItem="nFd-Ks-wTe" secondAttribute="bottom" constant="20" id="UUb-ox-f3s"/>
+                            <constraint firstItem="nFd-Ks-wTe" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="cj3-JW-UEJ"/>
+                            <constraint firstItem="Svi-Fi-J4j" firstAttribute="top" secondItem="VDZ-m1-llK" secondAttribute="bottom" constant="20" id="fC2-CD-vqa"/>
+                            <constraint firstItem="VDZ-m1-llK" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="wRT-L2-O1T"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="login" destination="Svi-Fi-J4j" id="oYc-Ha-XK9"/>
+                        <outlet property="password" destination="VDZ-m1-llK" id="QdW-CS-8SL"/>
+                        <outlet property="username" destination="nFd-Ks-wTe" id="2gS-xX-v2d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131" y="-28"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

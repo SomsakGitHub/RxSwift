@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8i0-ah-CJg">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="CxX-04-Ebj">
+            <objects>
+                <viewController id="8i0-ah-CJg" customClass="ViewController" customModule="rxswift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vct-bN-vAP">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzX-f5-dKi">
+                                <rect key="frame" x="74.000000000000014" y="69" width="245.33333333333337" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="CreatingYourOwnObservable"/>
+                                <connections>
+                                    <segue destination="GRF-gh-AI3" kind="show" id="dmW-pP-XsX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhp-EM-rHD">
+                                <rect key="frame" x="98.333333333333329" y="114" width="196.33333333333337" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="CreatingAnObservable"/>
+                                <connections>
+                                    <segue destination="FDR-IT-Yhv" kind="show" id="o3D-Qe-dQz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVp-8f-qKp">
+                                <rect key="frame" x="107.66666666666669" y="159" width="178" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="SharingSubscription"/>
+                                <connections>
+                                    <segue destination="tTo-8k-P2I" kind="show" id="SAI-gZ-hLM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21g-pN-IBu">
+                                <rect key="frame" x="146.33333333333334" y="204" width="100.66666666666666" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Operators"/>
+                                <connections>
+                                    <segue destination="IeQ-7w-ohB" kind="show" id="pgZ-Ro-KLJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VjD-22-CZW">
+                                <rect key="frame" x="142.66666666666666" y="249" width="108" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Debugging"/>
+                                <connections>
+                                    <segue destination="arf-9E-QPL" kind="show" id="QaU-Ur-MEt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eil-nu-fjr">
+                                <rect key="frame" x="161" y="294" width="71" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Single"/>
+                                <connections>
+                                    <segue destination="bGI-BQ-jwY" kind="show" id="ZQp-Oz-YkD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M6H-Gx-atQ">
+                                <rect key="frame" x="136.33333333333334" y="339" width="120.66666666666666" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Completable"/>
+                                <connections>
+                                    <segue destination="0RK-X8-zgL" kind="show" id="IDq-xJ-OyB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sex-cN-fjq">
+                                <rect key="frame" x="159" y="384" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Maybe"/>
+                                <connections>
+                                    <segue destination="jZx-Z1-fcC" kind="show" id="olA-II-UpM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="egf-zb-Hn8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sex-cN-fjq" firstAttribute="centerX" secondItem="Vct-bN-vAP" secondAttribute="centerX" id="1mN-lX-uC9"/>
+                            <constraint firstItem="21g-pN-IBu" firstAttribute="top" secondItem="lVp-8f-qKp" secondAttribute="bottom" constant="10" id="EVT-bS-a33"/>
+                            <constraint firstItem="yhp-EM-rHD" firstAttribute="top" secondItem="nzX-f5-dKi" secondAttribute="bottom" constant="10" id="Hr2-vQ-eLL"/>
+                            <constraint firstItem="21g-pN-IBu" firstAttribute="centerX" secondItem="Vct-bN-vAP" secondAttribute="centerX" id="PMJ-vQ-qVo"/>
+                            <constraint firstItem="yhp-EM-rHD" firstAttribute="centerX" secondItem="Vct-bN-vAP" secondAttribute="centerX" id="PmE-wi-8xn"/>
+                            <constraint firstItem="M6H-Gx-atQ" firstAttribute="top" secondItem="Eil-nu-fjr" secondAttribute="bottom" constant="10" id="R1J-D4-XpO"/>
+                            <constraint firstItem="Eil-nu-fjr" firstAttribute="centerX" secondItem="Vct-bN-vAP" secondAttribute="centerX" id="RTl-sw-64J"/>
+                            <constraint firstItem="nzX-f5-dKi" firstAttribute="centerX" secondItem="Vct-bN-vAP" secondAttribute="centerX" id="a2O-Cf-ZP7"/>
+                            <constraint firstItem="sex-cN-fjq" firstAttribute="top" secondItem="M6H-Gx-atQ" secondAttribute="bottom" constant="10" id="dOH-KZ-KTV"/>
+                            <constraint firstItem="VjD-22-CZW" firstAttribute="top" secondItem="21g-pN-IBu" secondAttribute="bottom" constant="10" id="eKd-qe-EZl"/>
+                            <constraint firstItem="lVp-8f-qKp" firstAttribute="top" secondItem="yhp-EM-rHD" secondAttribute="bottom" constant="10" id="jAq-Q1-SUw"/>
+                            <constraint firstItem="Eil-nu-fjr" firstAttribute="top" secondItem="VjD-22-CZW" secondAttribute="bottom" constant="10" id="koq-Zt-zDl"/>
+                            <constraint firstItem="nzX-f5-dKi" firstAttribute="top" secondItem="egf-zb-Hn8" secondAttribute="top" constant="10" id="lPT-L2-U73"/>
+                            <constraint firstItem="VjD-22-CZW" firstAttribute="centerX" secondItem="Vct-bN-vAP" secondAttribute="centerX" id="rVA-Ch-OB1"/>
+                            <constraint firstItem="M6H-Gx-atQ" firstAttribute="centerX" secondItem="Vct-bN-vAP" secondAttribute="centerX" id="w47-gd-FeI"/>
+                            <constraint firstItem="lVp-8f-qKp" firstAttribute="centerX" secondItem="Vct-bN-vAP" secondAttribute="centerX" id="yhf-8i-xFs"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XGT-5F-sbJ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-734" y="14"/>
+        </scene>
+        <!--CreatingAnObservable-->
+        <scene sceneID="xNJ-LJ-pdz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CreatingAnObservable" id="FDR-IT-Yhv" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="7FY-qu-1XL"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y20-UB-wB3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98" y="-197"/>
+        </scene>
+        <!--SharingSubscription-->
+        <scene sceneID="3g9-7Z-xij">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SharingSubscription" id="tTo-8k-P2I" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="csJ-r7-aop"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Br8-gP-dsB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-103" y="-151"/>
+        </scene>
+        <!--Operators-->
+        <scene sceneID="JMs-NG-boe">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Operators" id="IeQ-7w-ohB" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="WDs-ai-Slt"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WNo-WT-ski" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-150" y="-115"/>
+        </scene>
+        <!--Debugging-->
+        <scene sceneID="skT-i6-OPx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Debugging" id="arf-9E-QPL" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="fcg-QF-L5F"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tMW-6x-3hF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-147" y="-81"/>
+        </scene>
+        <!--Single-->
+        <scene sceneID="RBs-yC-QQj">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Single" id="bGI-BQ-jwY" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="JSq-29-0hO"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="igP-eA-QCL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-95" y="-46"/>
+        </scene>
+        <!--Completable-->
+        <scene sceneID="J2l-wU-vKV">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Completable" id="0RK-X8-zgL" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="LHY-MG-baC"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9ek-eM-CA0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-95" y="-8"/>
+        </scene>
+        <!--Maybe-->
+        <scene sceneID="P7L-cV-wDe">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Maybe" id="jZx-Z1-fcC" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="FGq-Yi-b5U"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r8e-8J-ABg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-143" y="44"/>
+        </scene>
+        <!--CreatingYourOwnObservable-->
+        <scene sceneID="zMV-HG-iLH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CreatingYourOwnObservable" id="GRF-gh-AI3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="l9J-O1-GR2"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zuq-gB-eoB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-66" y="-228"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
